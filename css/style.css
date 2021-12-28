@@ -9925,6 +9925,15 @@ body .theme-btn-thirteen:hover {background: #FF006B;}
   max-width: 583px;
   animation: jumpTwo 5s infinite linear;
 }
+
+.block-style-twentyThree .screen-container .shape-four {
+  z-index: 0;
+  left: 6.5%;
+  bottom: 12%;
+  /* max-width: 583px; */
+  animation: jumpTwo 5s infinite linear;
+}
+
 /*----------------- Fancy Feature Twenty Four -------------------*/
 .fancy-feature-twentyFour .bg-wrapper {
   background: #F5FBFF;
@@ -12022,3 +12031,77 @@ body .theme-btn-thirteen:hover {background: #FF006B;}
   transition: all 0.3s ease-in-out;
 }
 .service-details-one .sidebar .social-icon li a:hover {color: #000;}
+
+
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+  display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+  display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+  font-weight: bold;
+  margin-left: 2px;
+  color: black;
+  cursor: pointer;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+  display: block;
+}
+
+.gordita-head{
+  font-family: 'gordita';
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.10em;
+  padding: 0 0 38px;
+}
+
+.fancy-hero-three .gordita-heading {
+  font-family: 'gordita';
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.10em;
+  padding: 0 0 38px;
+  
+  /* font-weight: 700;
+  font-size: 72px;
+  line-height: 1.25em; */
+}
+
+.block-style-custom .text-wrapper h6 {
+  font-size: 24px;
+  color: #BABABA;
+  padding-bottom: 30px;
+}
+.block-style-custom .text-wrapper span {text-decoration: underline;}
+.block-style-custom .title {
+  font-size: 58px;
+  line-height: 1.29em;
+  font-weight: 500;
+  padding-bottom: 38px;
+}
+.block-style-custom p {
+  font-size: 24px;
+  line-height: 1.91em;
+  color: #000;
+}
+.block-style-custom ul li {
+  line-height: 42px;
+  color: #000;
+  position: relative;
+  padding-left: 30px;
+}
+.block-style-custom ul li:before {
+  content: url(../images/icon/76.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block-style-custom ul {padding-top: 50px;}
