@@ -868,7 +868,7 @@ body .theme-btn-thirteen:hover {background: #FF006B;}
   box-shadow: 0 13px 35px -12px rgba(35,35,35,0.1);
 }
 .theme-main-menu .logo a {display: block;}
-.theme-menu-one .logo img {max-width: 120px;}
+.theme-menu-one .logo img {max-width: 160px;}
 .theme-menu-one .right-button-group a {
   border-radius: 5px;
   font-weight: 500;
@@ -881,14 +881,14 @@ body .theme-btn-thirteen:hover {background: #FF006B;}
 }
 .theme-menu-one .right-button-group .signIn-action:hover {color: var(--blue-dark);}
 .theme-menu-one .right-button-group .signUp-action {
-  width: 155px;
+  width: 145px;
   color: #fff;
   background: var(--blue-dark);
   box-shadow: 0px 15px 40px rgba(161,146,250,0.35);
   margin-left: 35px;
 }
 .theme-menu-one .right-button-group .signUp-action:hover {background: #FFBA12; box-shadow: 0px 15px 40px rgba(255,186,18,0.3);}
-.theme-menu-one .right-button-group {margin-left: 100px;}
+.theme-menu-one .right-button-group {margin-left: 70px;}
 /*---------------------Theme Hero Banner/One ---------------*/
 .hero-banner-one {position: relative;}
 .hero-banner-one .hero-upper-container {
