@@ -30,6 +30,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- responsive style sheet -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!-- Slider style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 
 
 	<!-- Fix Internet Explorer ______________________________________-->
@@ -171,12 +173,54 @@
 
 			</div> <!-- /.fancy-hero-one -->
 
-			<div class="pricing-slider">
 
-				<div class="visma-page--container">
+
+			<div>
+				<div class="">
+					<div class="row col-xl-6 col-lg-8 m-auto">
+
+						<!-- <form action="" style="width: 100%;">
+
+							<label class="form-label">Cameras:</label>
+							<input type="range" min="4" max="300" class="form-range" id="customRange1"
+								style="width: 100%;">
+
+							<br /> <br />
+							<label class="form-label">Features:</label>
+							<input type="range" min="2" max="100" class="form-range" id="customRange1"
+								style="width: 100%;">
+						</form> -->
+
+						<h5>Cameras:</h5>
+						<div class="Range" style="width: 100%;">
+							<div class="sliderValue">
+								<span id="sliderSpan">100</span>
+							</div>
+							<div class="field">
+								<div class="value left">0</div>
+								<input id="sliderInput" type="range" min="0" max="100" value="0" steps="1"
+									style="width: 100%;"">
+								<div class=" value right">100
+							</div>
+						</div>
+						<!-- 
+						<h5>Features:</h5> <br />
+						<div class="Range" style="width: 100%;">
+							<div class="sliderValueFea">
+								<span id="sliderSpanFea">100</span>
+							</div>
+							<div class="field">
+								<div class="value left">0</div>
+								<input id="sliderInputFea" type="range" min="0" max="100" value="0" steps="1"
+									style="width: 100%;"">
+								<div class=" value right">100
+							</div>
+						</div> -->
+					</div>
+				</div>
+
+				<!-- <div class="visma-page--container">
 					<div class="autoinvoice-box">
-
-						<!-- Efficiency calculator -->
 						<div class="slider-autoinvoice-module" data-color="light-blue">
 							<div class="slider-autoinvoice">
 								<p class="slider-autoinvoice--label">Total amount of outgoing invoices per year</p>
@@ -200,12 +244,9 @@
 									<span id="slider-result">&nbsp;</span>
 								</p>
 							</div>
-							<!-- calculation result-->
 						</div>
-						<!-- end efficiency calculator -->
 					</div>
-
-				</div>
+				</div> -->
 
 				<!-- <img src="images/shape/62.svg" alt="" class="shapes shape-one">
 				<img src="images/shape/63.svg" alt="" class="shapes shape-two">
@@ -374,26 +415,28 @@
 
 			<div class="container">
 				<!-- <div class="bg-wrapper">
-					<div class="row">
-						<div class="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration="1200">
-							<div class="text-wrapper md-pb-40">
-								<img src="images/icon/42.svg" alt="" class="icon">
-								<div class="more-text">More Over <span>1500+ customers</span></div>
-								<p>Just simply amazing. Feel lucky use their service. Highly
-									recommended andappriciate their service & highly trusted.</p>
-								<h6>Jimmy Klein. <span>California USA</span></h6>
+						<div class="row">
+							<div class="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration="1200">
+								<div class="text-wrapper md-pb-40">
+									<img src="images/icon/42.svg" alt="" class="icon">
+									<div class="more-text">More Over <span>1500+ customers</span></div>
+									<p>Just simply amazing. Feel lucky use their service. Highly
+										recommended andappriciate their service & highly trusted.</p>
+									<h6>Jimmy Klein. <span>California USA</span></h6>
+								</div>
+							</div>
+							<div class="col-lg-6 order-lg-first" data-aos="fade-up" data-aos-duration="1200">
+								<img src="images/media/img_40.png" alt="" class="main-img">
 							</div>
 						</div>
-						<div class="col-lg-6 order-lg-first" data-aos="fade-up" data-aos-duration="1200">
-							<img src="images/media/img_40.png" alt="" class="main-img">
-						</div>
-					</div>
-				</div> -->
+					</div> -->
 
-				<div class="contact-banner md-mt-60" style="margin-top: 5px; margin-bottom: -50px; padding-top: 200px;">
+				<div class="contact-banner md-mt-60"
+					style="margin-top: 5px; margin-bottom: -50px; padding-top: 200px; padding-left: 50px; padding-right: 50px;">
 					<div class="row justify-content-between align-items-center">
 						<div class="col-xl-7 col-lg-8" data-aos="fade-right" data-aos-duration="1200">
-							<p style="font-weight: 450;">Want a custom pricing for your business? Fill the form.</p>
+							<p style="font-weight: 450;">Want a custom pricing for your business? Fill the form.
+							</p>
 						</div>
 						<div class="col-xl-4 col-lg-3" data-aos="fade-left" data-aos-duration="1200"><a
 								href="contact-us.html" class="theme-btn-four ml-auto">Contact us</a></div>
@@ -596,7 +639,8 @@
 							<li><a href="#">Terms</a></li>
 						</ul>
 						<p class="order-sm-first" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100"
-							data-aos-anchor=".theme-footer-one">Copyright @2021 deski inc.</p>
+							data-aos-anchor=".theme-footer-one">Copyright @2021 deski inc.
+						</p>
 					</div>
 				</div> <!-- /.bottom-footer -->
 			</div>
@@ -612,6 +656,8 @@
 
 
 		<!-- Optional JavaScript _____________________________  -->
+
+
 
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<!-- jQuery -->
@@ -635,7 +681,38 @@
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
 
+		<script>
+			const slideValue = document.getElementById("sliderSpan");
+			const inputSlider = document.getElementById("sliderInput");
+			inputSlider.oninput = (() => {
+				let value = inputSlider.value;
+				slideValue.textContent = value;
+				slideValue.style.left = value + "%";
+				slideValue.classList.add("show");
+				console.log("slider calue current: ", value)
+			});
+			inputSlider.onblur = (() => {
+				slideValue.classList.remove("show");
+			});
+		</script>
+		<!-- <script>
+			const slideValue = document.getElementById("sliderSpanFea");
+			const inputSlider = document.getElementById("sliderInputFea");
+			inputSlider.oninput = (() => {
+				let value = inputSlider.value;
+				slideValue.textContent = value;
+				slideValue.style.left = value + "%";
+				slideValue.classList.add("show");
+				console.log("slider calue current: ", value)
+			});
+			inputSlider.onblur = (() => {
+				slideValue.classList.remove("show");
+			});
+
+		</script> -->
+
 	</div> <!-- /.main-page-wrapper -->
+	</div>
 </body>
 
 </html>
