@@ -3702,7 +3702,7 @@ body .theme-btn-thirteen:hover {background: #FF006B;}
 /*----------------- Footer Style Two --------------*/
 .theme-footer-two {position: relative; overflow: hidden;}
 .theme-footer-two:before {
-  content: url(../images/shape/44.svg);
+  /* content: url(../images/shape/44.svg); */
   position: absolute;
   bottom: -10px;
   left: 11%;
@@ -12181,29 +12181,3 @@ body .theme-btn-thirteen:hover {background: #FF006B;}
   left: 0;
 }
 .block-style-custom ul {padding-top: 50px;}
-
-
-#text {
-	display: inline-block;
-	vertical-align: middle;
-	letter-spacing: 2px;
-  color: #572FF6;
-}
-
-#cursor {
-	display: inline-block;
-	vertical-align: middle;
-	width: 3px;
-	height: 72px;
-  color: #572FF6;
-	animation: blink .75s step-end infinite;
-}
-
-@keyframes blink {
-	from, to { 
-		background-color: transparent 
-	}
-	50% { 
-		background-color: #572FF6; 
-	}
-}
